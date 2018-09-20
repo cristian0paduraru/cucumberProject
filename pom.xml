@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.fulstackqa.webtests</groupId>
+    <artifactId>cucumber</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <lombok.version>1.18.2</lombok.version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <serenity.version>1.5.9</serenity.version>
+        <serenity.cucumber.version>1.5.4</serenity.cucumber.version>
+        <spring.version>4.3.10.RELEASE</spring.version>
+        <serenity.spring.version>1.5.3</serenity.spring.version>
+    </properties>
+
+    <dependencies>
+        <!--lombok-->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <!--Serenity-->
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-core</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-junit</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-cucumber</artifactId>
+            <version>${serenity.cucumber.version}</version>
+        </dependency>
+
+        <!--Selenium-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-common</artifactId>
+            <version>2.0b1</version>
+        </dependency>
+
+        <!--Spring-->
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-spring</artifactId>
+            <version>${serenity.spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!--SpringBoot-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>2.0.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+</project>
