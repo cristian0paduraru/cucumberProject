@@ -18,13 +18,19 @@ public class GoogleSteps {
         googlePage.openGooglePage();
     }
 
-    @When("^word is inserted$")
-    public void wordIsInserted() throws Throwable {
-        googlePage.insertSearchTerm();
+    @When("^\"([^\"]*)\" is inserted$")
+    public void wordIsInserted(String word) throws Throwable {
+        googlePage.insertSearchTerm(word);
     }
 
-    @Then("^search results are returned$")
-    public void searchResultsAreReturned() throws Throwable {
+    @When("^click on search button$")
+    public void clickSearchButton() throws Throwable {
+        googlePage.clickSearchButton();
+    }
 
+
+    @Then("^search results are returned$")
+    public void searchResultsAreReturned(String word) throws Throwable {
+        googlePage.getSearchResults(word);
     }
 }
