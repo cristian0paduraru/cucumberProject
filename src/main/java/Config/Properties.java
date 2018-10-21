@@ -1,7 +1,7 @@
 package Config;
 
+import com.sun.istack.internal.NotNull;
 import lombok.Getter;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;

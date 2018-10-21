@@ -6,6 +6,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.GooglePage;
 
+import static org.junit.Assert.assertTrue;
+
 /**
  * Created by Xristi on 9/20/2018.
  */
@@ -30,7 +32,7 @@ public class GoogleSteps {
 
 
     @Then("^search results are returned$")
-    public void searchResultsAreReturned(String word) throws Throwable {
-        googlePage.getSearchResults(word);
+    public void searchResultsAreReturned() throws Throwable {
+        assertTrue(googlePage.getSearchResults()>0);
     }
 }
